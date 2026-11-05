@@ -1,0 +1,41 @@
+{
+  "translate": {
+    "Japanese": {
+      "English": "Thank you for taking the time out of your busy schedule today. I would like to introduce our AI solutions.",
+      "Chinese": "感谢您在百忙之中抽出时间。我想向您介绍一下我们的AI解决方案。"
+    },
+    "English": {
+      "Japanese": "本日はお忙しいところ、お時間をいただきありがとうございます。弊社のAIソリューションについてご紹介させていただきます。",
+      "Chinese": "感谢您在百忙之中抽出时间。我想向您介绍一下我们的AI解决方案。"
+    },
+    "Chinese": {
+      "Japanese": "本日はお忙しいところ、お時間をいただきありがとうございます。弊社のAIソリューションについてご紹介させていただきます。",
+      "English": "Thank you for taking the time out of your busy schedule today. I would like to introduce our AI solutions."
+    }
+  },
+  "summarize": {
+    "Japanese": "AI技術は深層学習の進歩により、自然言語処理や画像認識などの分野で飛躍的に発展しました。特に大規模言語モデル（LLM）はテキスト生成や翻訳など幅広いタスクで人間に匹敵する性能を実現しています。企業でのAI導入が加速する一方、倫理やプライバシーの課題も議論されており、責任あるAI開発が求められています。",
+    "English": "AI technology has made significant advances through deep learning, particularly in natural language processing and image recognition. Large language models (LLMs) now achieve human-level performance across tasks like text generation and translation. While enterprise AI adoption is accelerating, ethical concerns and privacy issues require responsible development practices.",
+    "Chinese": "AI技术通过深度学习取得了显著进展，特别是在自然语言处理和图像识别领域。大型语言模型（LLM）在文本生成和翻译等任务中已达到接近人类的水平。企业AI应用正在加速，但伦理和隐私问题也需要负责任的开发实践。"
+  },
+  "generate": {
+    "Japanese": {
+      "blog": "AI × 業務効率化で実現する新しい働き方\n\n近年、AI技術の急速な発展により、企業の働き方が大きく変わりつつあります。定型業務の自動化、データ分析の高速化、文書作成の効率化など、AIは多くの業務領域で生産性の向上に貢献しています。\n\n特に注目されているのが、自然言語処理を活用した業務自動化です。メールの自動分類、議事録の自動要約、レポートの下書き生成など、これまで多くの時間を費やしていた作業をAIが支援することで、従業員はより創造的な業務に集中できるようになりました。\n\n働き方改革の観点からも、AIの活用は重要な意味を持ちます。長時間労働の削減、リモートワークの効率化、意思決定のスピードアップなど、AIは働く環境そのものを改善する力を持っています。\n\nただし、AIはあくまでツールであり、最終的な判断や意思決定は人間が行うことが重要です。AIと人間が適切に役割分担を行い、それぞれの強みを活かすことで、真の業務効率化が実現できるのです。",
+      "formal": "業務効率化におけるAI活用に関する報告\n\n1. 背景と目的\n働き方改革の推進に伴い、業務プロセスの効率化が急務となっています。本報告では、AI技術を活用した業務自動化の現状と今後の展望について述べます。\n\n2. AI活用の現状\n現在、多くの企業がAIを導入し、定型業務の自動化を進めています。特に文書処理、データ分析、カスタマーサポートの分野で活用が進んでおり、定型的な作業にかかる時間の削減が期待されています。ただし、効果は業務の内容や運用体制によって異なります。\n\n3. 今後の展望\nAI技術のさらなる発展により、より高度な業務への適用が期待されます。特に意思決定支援、予測分析、クリエイティブ業務の補助など、知的労働の領域への展開が見込まれています。\n\n4. 結論\nAIを適切に導入・運用することで、業務効率化と働き方改革の推進に寄与することが期待できます。段階的な導入と継続的な評価・改善が重要です。",
+      "casual": "AIで仕事がラクになる！\n\nみなさん、毎日の仕事でこんなことありませんか？同じようなメールを何度も書いたり、長い会議の議事録をまとめたり…。実はこういう作業、AIに任せられるんです。\n\nたとえば、文章の翻訳や要約はAIの得意分野。日本語で書いた文章を英語に一発変換したり、長いレポートを要点だけにまとめたり。これだけでも、毎日の作業がだいぶ楽になりそうですよね。\n\nもちろん、AIが出した結果をそのまま使うんじゃなくて、最後は自分でチェックするのが大事。でも、ゼロから作るのと、下書きを直すのとでは、かかる時間が全然違います。\n\nまずは小さなことからAIを試してみてください。きっと「もっと早く使えばよかった！」って思いますよ。",
+      "technical": "AIを用いた文章作成支援システムの設計と実装\n\n## 1. システム概要\n本稿では、翻訳、要約、文章生成の3機能を持つ文章作成支援システムの設計について述べる。画面はNext.js/TypeScriptで実装し、Claude APIとの連携コードを備えている。\n\n## 2. アーキテクチャ\n既定では、フロントエンドからNext.js内蔵のAPI Routeを呼び出す。環境変数 `NEXT_PUBLIC_API_BASE_URL` を設定すると、独立したFastAPI/Pythonバックエンドへ直接接続することもできる。API RouteがFastAPIを中継する構成ではなく、Claude APIとの連携は両方の経路にそれぞれ実装している。\n\n## 3. デモモード\n既定はデモモードであり、固定のサンプルを返すため、実際のClaude APIへのリクエストは発生しない。環境変数 `AI_MODE=live` とAPIキーの両方を設定した場合のみClaude APIを呼び出す。\n\n## 4. プロンプト設計\n機能ごとにプロンプトテンプレートを用意し、言語（日/英/中）と、文章生成ではスタイル（blog/formal/casual/technical）をパラメータとして受け取る。\n\n## 5. まとめ\nデモモードを既定とすることで、API利用料金を発生させずに画面と処理の流れを確認できる。"
+    },
+    "English": {
+      "blog": "The Future of Work: How AI is Transforming Business Efficiency\n\nArtificial intelligence is no longer a futuristic concept — it's actively reshaping how businesses operate today. From automating routine tasks to providing data-driven insights, AI tools are helping organizations work smarter, not harder.\n\nOne of the most impactful areas is natural language processing. AI can now draft emails, summarize meeting notes, translate documents, and generate reports in seconds. These capabilities free up valuable time for employees to focus on strategic thinking and creative problem-solving.\n\nThe shift toward AI-powered workflows also supports the broader movement for better work-life balance. By reducing repetitive tasks and streamlining processes, companies can achieve more with less, while giving their teams the flexibility they need.\n\nOf course, AI works best as a collaborative tool. The most successful implementations combine AI efficiency with human judgment, ensuring quality and accountability at every step.",
+      "formal": "Report: AI-Driven Business Process Optimization\n\n1. Introduction\nAs organizations seek to improve operational efficiency, AI technologies have emerged as a critical enabler of business transformation.\n\n2. Current State\nMany organizations are applying AI to workflow automation, with the aim of reducing the time spent on routine tasks. Common areas of use include document processing, data analysis, and customer communications, although results vary with the nature of the work and how it is operated.\n\n3. Recommendations\nA phased approach to AI adoption, beginning with high-volume repetitive tasks, is recommended so that results can be evaluated while managing change effectively.\n\n4. Conclusion\nWhen implemented thoughtfully and reviewed on an ongoing basis, AI integration can contribute to greater operational efficiency.",
+      "casual": "AI Makes Work So Much Easier!\n\nEver spent hours writing the same kind of email over and over? Or struggled to summarize a long meeting? AI tools can handle all of that for you.\n\nJust type in what you need — a translation, a summary, or even a full article — and you'll get a solid draft in seconds. Sure, you'll want to review it, but starting from something is way better than staring at a blank page.\n\nTry it out with something small first. You'll wonder why you didn't start sooner!",
+      "technical": "Designing a Writing Assistant with a Claude API Integration\n\n## Overview\nThis article describes the design of a writing assistant with three functions: translation, summarization, and text generation. The UI is built with Next.js and TypeScript, and the project includes integration code for Anthropic's Claude API.\n\n## Architecture\nBy default, the frontend calls the API Routes built into Next.js. Setting the `NEXT_PUBLIC_API_BASE_URL` environment variable connects it directly to a separate FastAPI/Python backend instead. The API Routes do not proxy to FastAPI; each path has its own Claude API integration.\n\n## Demo Mode\nDemo mode is the default. It returns fixed samples, so no real Claude API request is made. The Claude API is called only when both `AI_MODE=live` and an API key are set.\n\n## Prompt Design\nEach function has its own prompt template. Templates take a language (Japanese, English, or Chinese) and, for text generation, a style (blog, formal, casual, or technical) as parameters."
+    },
+    "Chinese": {
+      "blog": "AI驱动的工作方式改革：效率提升的新路径\n\n近年来，AI技术的飞速发展正在深刻改变企业的工作方式。从定型业务的自动化到数据分析的提速，AI在众多业务领域为生产力提升做出了贡献。\n\n特别值得关注的是自然语言处理在业务自动化中的应用。邮件自动分类、会议记录自动摘要、报告草稿生成等，这些曾经耗费大量时间的工作现在都可以由AI来辅助完成，让员工能够专注于更具创造性的工作。\n\n从工作方式改革的角度来看，AI的应用同样具有重要意义。减少加班、提升远程办公效率、加速决策过程——AI有能力从根本上改善工作环境。\n\n当然，AI终究只是工具，最终的判断和决策仍需由人来完成。只有人与AI合理分工、各展所长，才能实现真正的业务效率化。",
+      "formal": "关于AI在业务效率化中应用的报告\n\n一、背景与目的\n随着工作方式改革的推进，业务流程的效率化已成为紧迫课题。本报告就AI技术在业务自动化中的应用现状及未来展望进行分析。\n\n二、应用现状\n目前已有众多企业引入AI，推进定型业务的自动化。特别是在文档处理、数据分析和客户服务领域应用较为广泛，有望缩短定型工作所需的时间，但实际效果因业务内容和运营方式而异。\n\n三、结论\n合理引入和运用AI，有助于推进业务效率化和工作方式改革。分阶段导入和持续改进十分重要。",
+      "casual": "用AI让工作变轻松！\n\n大家在日常工作中有没有遇到过这样的情况？反复写类似的邮件、整理冗长的会议记录……其实这些工作都可以交给AI来做。\n\n比如文章的翻译和摘要就是AI的强项。把日语文章一键翻译成英语，或者把长报告压缩成几个要点。光是这些，就能让日常工作轻松不少。\n\n先从小事开始尝试AI吧，你一定会觉得'早该用了'！",
+      "technical": "集成Claude API的写作辅助系统设计与实现\n\n## 概述\n本文介绍一个具有翻译、摘要和文章生成三项功能的写作辅助系统。界面采用Next.js/TypeScript实现，项目中包含与Anthropic Claude API集成的代码。\n\n## 架构设计\n默认情况下，前端调用Next.js内置的API Route。设置环境变量 `NEXT_PUBLIC_API_BASE_URL` 后，也可以直接连接独立的FastAPI/Python后端。API Route并不转发请求到FastAPI，两条路径分别实现了与Claude API的集成。\n\n## 演示模式\n默认使用演示模式，返回固定的示例内容，不会发起真实的Claude API请求。只有同时设置 `AI_MODE=live` 和API密钥时，才会调用Claude API。\n\n## 提示设计\n每项功能都有专用的提示模板，接收语言（日/英/中）参数；文章生成还接收风格（博客/商务/休闲/技术）参数。"
+    }
+  }
+}

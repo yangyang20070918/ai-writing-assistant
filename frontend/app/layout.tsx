@@ -4,7 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "AI Writing Assistant",
-  description: "AI-powered translation, summarization, and text generation",
+  description:
+    "Demo of a translation, summarization, and text generation tool using fixed sample responses",
 };
 
 export default function RootLayout({

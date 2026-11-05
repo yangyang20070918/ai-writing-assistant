@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home">
       <h1>AI Writing Assistant</h1>
       <p className="home-desc">
-        Claude APIを活用した文章作成支援ツール
+        Claude API連携を想定した文章作成支援ツール（デモ版：固定のサンプル応答を表示します）
       </p>
 
       <div className="feature-grid">

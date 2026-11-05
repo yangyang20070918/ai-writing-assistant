@@ -3,7 +3,17 @@ node_modules/
 dist/
 __pycache__/
 *.pyc
+.pytest_cache/
 .env
+.env.*
+!.env.example
 .venv/
 venv/
 *.local
+
+# Lambda build output (third-party packages and deployment bundle)
+lambda/package/
+lambda/*.zip
+
+# Review bundle
+security-review.zip
