@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:9000/api/ai";
+const API_BASE = "http://localhost:8000/api/ai";
 
 export async function apiTranslate(
   text: string,
